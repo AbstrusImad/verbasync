@@ -1,0 +1,126 @@
+{
+  "id": "verbasync",
+  "name": "VerbaSync",
+  "status": "live",
+  "folder": "main_account/verbasync",
+  "created_at": "2026-10-05T12:21:17.638989+00:00",
+  "domain": [
+    "multilingual publication operations",
+    "semantic localization integrity"
+  ],
+  "audience": [
+    "technical documentation publishers",
+    "localization editors",
+    "document-consuming organizations"
+  ],
+  "problem": "A multilingual publication can silently change prohibitions, quantities or conditions across languages and leave subscribers using withdrawn wording.",
+  "core_concept": "Atomic multilingual release bundles with segment-level independent semantic equivalence, exact editor approvals, immutable version vectors, consumer acknowledgements and divergence-triggered release freezes.",
+  "genlayer_intelligence": {
+    "primary_role": "Independently interpret translated segments against canonical source segments, distinguishing equivalent, divergent and uncertain meaning.",
+    "state_effects": [
+      "block or permit locale adoption",
+      "freeze a live release after a substantiated divergence",
+      "qualify a corrected segment under a new immutable version"
+    ]
+  },
+  "protocol_mechanisms": [
+    "bounded segment-locale matrix",
+    "immutable source revisions",
+    "translation attempts bound to exact source hash",
+    "independent categorical semantic reviews",
+    "exact editor approvals",
+    "atomic release manifest",
+    "one-way release supersession",
+    "consumer acknowledgement cursors",
+    "freeze on upheld semantic issue",
+    "repair requires replacement release"
+  ],
+  "economic_model": "No escrow, payments, rewards or token. Exact multilingual edition adoption and subscriber synchronization coordinate publication.",
+  "contract_lifecycle": [
+    "create publication",
+    "declare locales and editors",
+    "stage canonical edition",
+    "submit translations",
+    "independently review each segment",
+    "approve exact locale vector",
+    "atomically publish",
+    "acknowledge manifest",
+    "file semantic issue",
+    "freeze or dismiss",
+    "publish corrected successor",
+    "retire acknowledged predecessor"
+  ],
+  "scope": "Contracts only; StudioNet only.",
+  "design_reservation": null,
+  "scope_exceptions": {
+    "frontend": "Persistent user contracts-only scope overrides frontend, visual reservation and browser/dashboard requirements. No styles or skeletons consumed."
+  },
+  "novelty_comparison": {
+    "candidates_considered": [
+      "multilingual publication coherence",
+      "heritage archival chain-of-custody",
+      "urban accessibility remediation",
+      "interorganizational emergency dispatch",
+      "schema migration coordination"
+    ],
+    "rejected": "Heritage provenance resembles auction provenance; remediation and dispatch resemble Civic Pulse; software migration resembles Dependency Sentinel.",
+    "baseline_projects": 22,
+    "distinction": "No security dependency graph or mitigation permits, research quorum or experimental cohorts, circular material clearing, bilateral redlining, data-use licenses, funds or reputation. Semantic locale matrices drive atomic edition activation and subscriber adoption."
+  },
+  "readme_fingerprint": {
+    "opening_device": "A source/translation meaning mismatch shown as an editor desk incident.",
+    "editorial_voice": "Localization release engineer explaining exact publication barriers.",
+    "document_architecture": "Mismatch example, version vector anatomy, editor workflow, subscriber handoff, freeze/replacement, reproducible verification and authority limits.",
+    "diagram_language": "Locale-by-segment matrix and atomic edition version vector.",
+    "proof_and_verification_style": "Every readiness predicate paired with executable refusal and successor adoption evidence.",
+    "closing_device": "Publisher and subscriber responsibility handoff.",
+    "section_sequence": "Meaning inversion, locale matrix, editor execution, consensus constraints, subscriber handoff, issue suspension, method families, operational bounds, reproduction, responsibility transfer.",
+    "heading_style": "Workplace release desk vocabulary rather than numbered plates, experiment timelines or conservation equations.",
+    "table_strategy": "Bilingual meaning contrast, issue-effect table, authority families and environment names.",
+    "technical_depth_pattern": "Each actor workflow is followed by the exact immutable vector and state predicates it can change."
+  },
+  "updated_at": "2026-10-05T13:32:41.365907+00:00",
+  "network_deployment": {
+    "network": "studionet",
+    "chain_id": 61999,
+    "rpc": "https://studio.genlayer.com/api",
+    "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+    "deployer": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+    "source_sha256": "7c0532bbfe129efe20af60145c14c508c404ed194308bd52db39139bca7e6e56",
+    "status": "deployed",
+    "deploy_tx": "0x6ecccf57e3180e596546dad19cae834baad2bd99dbc0ce8a19c1b03bf2e7de55",
+    "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+    "execution": "SUCCESS",
+    "verified_state": {
+      "chain_id": 61999,
+      "editions": 0,
+      "issues": 0,
+      "network": "studionet",
+      "publications": 0,
+      "title": "VerbaSync StudioNet Publication Desk",
+      "translations": 0
+    }
+  },
+  "public_links": {
+    "contract": "https://explorer-studio.genlayer.com/address/0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+    "controlled_test_contract": "https://explorer-studio.genlayer.com/address/0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+    "repository": "https://github.com/AbstrusImad/verbasync"
+  },
+  "verification": {
+    "direct_tests": 59,
+    "integration_tests": 1,
+    "public_methods": 24,
+    "write_methods": 16,
+    "view_methods": 8,
+    "source_sha256": "7c0532bbfe129efe20af60145c14c508c404ed194308bd52db39139bca7e6e56",
+    "live_source_matches": true,
+    "finalized_contract_writes": 51,
+    "successful_contract_writes": 46,
+    "expected_policy_refusals": 5,
+    "real_semantic_reviews": 4,
+    "main_available": true,
+    "secrets_scan": "passed"
+  },
+  "documentation_language": "English",
+  "github_account": "AbstrusImad"
+}

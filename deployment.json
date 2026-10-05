@@ -1,0 +1,21 @@
+{
+  "network": "studionet",
+  "chain_id": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "deployer": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+  "source_sha256": "7c0532bbfe129efe20af60145c14c508c404ed194308bd52db39139bca7e6e56",
+  "status": "deployed",
+  "deploy_tx": "0x6ecccf57e3180e596546dad19cae834baad2bd99dbc0ce8a19c1b03bf2e7de55",
+  "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+  "execution": "SUCCESS",
+  "verified_state": {
+    "chain_id": 61999,
+    "editions": 0,
+    "issues": 0,
+    "network": "studionet",
+    "publications": 0,
+    "title": "VerbaSync StudioNet Publication Desk",
+    "translations": 0
+  }
+}

@@ -1,0 +1,1047 @@
+{
+  "project": "VerbaSync",
+  "network": "studionet",
+  "chain_id": 61999,
+  "source_sha256": "7c0532bbfe129efe20af60145c14c508c404ed194308bd52db39139bca7e6e56",
+  "principal_contract": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+  "controlled_contract": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+  "local_tests": 59,
+  "finalized_writes": 51,
+  "successful_writes": 46,
+  "expected_refusals": 5,
+  "controlled_model_fixtures": true,
+  "main_default_models_mocked": false,
+  "real_translation_reviews": [
+    {
+      "translation": 1,
+      "review": {
+        "decision": "divergent",
+        "explanation": "The source forbids unplugging during the time the status light is on. The target says to unplug the device while the status light is on, reversing the polarity/permission and changing the instruction\u2019s meaning.",
+        "quotes": {
+          "source": "Do not unplug the device while its status light is on.",
+          "target": "Desenchufe el dispositivo mientras la luz de estado est\u00e9 encendida."
+        },
+        "reason": "semantic_alignment"
+      }
+    },
+    {
+      "translation": 2,
+      "review": {
+        "decision": "equivalent",
+        "explanation": "The Spanish translation preserves the prohibition, the object, and the condition: do not unplug the device during the time its status light is on. No meaning change in negation, scope, or condition is evident.",
+        "quotes": {
+          "source": "Do not unplug the device while its status light is on.",
+          "target": "No desenchufe el dispositivo mientras la luz de estado est\u00e9 encendida."
+        },
+        "reason": "semantic_alignment"
+      }
+    },
+    {
+      "translation": 3,
+      "review": {
+        "decision": "equivalent",
+        "explanation": "Both segments express the same prohibition and condition: do not unplug/disconnect the device while its status indicator light is on. Negation, action, object, and temporal condition align without added or missing meaning.",
+        "quotes": {
+          "source": "Do not unplug the device while its status light is on.",
+          "target": "Ne d\u00e9branchez pas l'appareil lorsque son voyant d'\u00e9tat est allum\u00e9."
+        },
+        "reason": "semantic_alignment"
+      }
+    }
+  ],
+  "real_issue_review": {
+    "decision": "equivalent",
+    "explanation": "The source and target segments are semantically identical. The source uses a negative imperative ('Do not unplug') which is correctly mapped to the Spanish negative imperative ('No desenchufe'). The temporal condition regarding the status light ('while its status light is on') is accurately reflected in the Spanish translation ('mientras la luz de estado est\u00e9 encendida'), maintaining the same obligation and scope. The claim that the Spanish text permits unplugging is incorrect; 'No desenchufe' is a direct prohibition.",
+    "quotes": {
+      "source": "Do not unplug the device",
+      "target": "No desenchufe el dispositivo"
+    },
+    "reason": "semantic_alignment"
+  },
+  "main_live_manifest": {
+    "available": true,
+    "edition": 1,
+    "manifest": {
+      "domain": "VerbaSync atomic edition v1",
+      "edition": 1,
+      "fingerprint": "d38f82af73c1fc4a3d16e4afe5231ad75138ee271b0dd95ab86a815d351bc4ff",
+      "locales": {
+        "es": "c92699a9512fb8e8e2c9f063c32deada4e7f92fba9bb6f0c61079803d31f2df5",
+        "fr": "111744f6cff08595a5067d4feecd98a3b9f1f239eb2fcf24dfe13a8d1304d152"
+      },
+      "publication": 1,
+      "source_sha256": "c1e853d3a92bd07616847499a000984a4b70481fbe1c50ec77be0163983e7e49"
+    },
+    "reason": "live"
+  },
+  "runs": [
+    {
+      "mocked": true,
+      "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+      "transactions": [
+        {
+          "tx": "0xd26871b3d8787a10a957dcf0245ea49624bce749ccac9f10a84614bcd2460e14",
+          "method": "create_publication",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "256efdf9ac4184015f9b6d55b5e15e34e19a6337ee3aa41256b09ea12a6746f0",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 5
+            }
+          }
+        },
+        {
+          "tx": "0xa98aac96f535a2235887639f1baecc1fb46b8b7dd65eccb0284da0b5156e1b9f",
+          "method": "set_editor",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "959347ebb574f24f5cfb17d8ddbbf03eba4a3f3f81f0361c43d0e8eaed5007e2",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0x68768a89d6739955e7d5e28cb363188bcb1239ec0fd3d48ecff8162824bfbe74",
+          "method": "subscribe",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x60032dbeB40927fB4D31d001E736Da28748bEed2",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "8e4dc8f4291b98d4f810ed4b61c40761291d10480f4186f8de399da3deb876bb",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "idle": 2,
+              "agree": 3
+            }
+          }
+        },
+        {
+          "tx": "0x36a26688ad29c6a786967c0c128f9c6154ef428f32bfce49bc256f4a4389ecac",
+          "method": "stage_edition",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "764e44a69e98720f3ddbd36bab32ab1d617faf9ac9f8f23c1f4f0c7b11754236",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 5
+            }
+          }
+        },
+        {
+          "tx": "0x86f38c20f879086f9b7f7ca12cad6b06e0441da24270e3663cfdf3681177e9ff",
+          "method": "cancel_edition",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x60032dbeB40927fB4D31d001E736Da28748bEed2",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "ERROR",
+          "expected_rejection": "publisher required",
+          "args_sha256": "d142c4c8699e554cb66c181195dc487fae99826a8aab8498461eac23fd59181a",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0xadbdf5e38f92a0b12acda4f09ef7f2a6475fcde9ad56f238271d3ad4792d2a1e",
+          "method": "cancel_edition",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "39e7269425c5971af07221fd02fc5d2883596adc114d0c654848e5d93f81c4e0",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 5
+            }
+          }
+        },
+        {
+          "tx": "0x505d4032392237fccc0beba7f3349a1033b11792a6ac633eb44c1dfc9f6e0051",
+          "method": "stage_edition",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "774b06d456fe8566ea9b3c27292ca68994b5532a0e7ee0df876e6d51230b9a5e",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 5
+            }
+          }
+        },
+        {
+          "tx": "0x5747c53e7b3b8591f345db446d42c71928b025854f2cbf089a1eb04209d0b2bb",
+          "method": "submit_translation",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x54D713f8Af21B7E0b70930dc1Ea3f5DeD27ddD58",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "5be7c4ecf9cdd7024cdef8bd03a5c720a07aae8544c7c5365c4beb49bbc1190e",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0x3113c8426ec1f6ad40394e35810ecd2f141d35317c6de8be2cb4da5453940e55",
+          "method": "publish",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "ERROR",
+          "expected_rejection": "edition not ready",
+          "args_sha256": "43bb8aa094963df6899df02b6d07eb1ff126aeb3fe04dfa4d1ed5bbc5e6df327",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0xbbd320252a71ed8c275121fd04e59441f22fda340244ec09ac6ec65a324b7aeb",
+          "method": "review_translation",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "a9097e34303d8746451a5bba60092eff0fef744dbb5e7d6f4c3e5ce85e8c414c",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0xe7ce532632ebb375977f0709dcafea3254bc382515f3134a46227249954fd9a6",
+          "method": "review_translation",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "ERROR",
+          "expected_rejection": "translation already reviewed",
+          "args_sha256": "a9097e34303d8746451a5bba60092eff0fef744dbb5e7d6f4c3e5ce85e8c414c",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 5
+            }
+          }
+        },
+        {
+          "tx": "0x52d911bf31100577ac9aa43609a2f63923a0afee9ebd8f48c848e1df39823bd4",
+          "method": "approve_locale",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x54D713f8Af21B7E0b70930dc1Ea3f5DeD27ddD58",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "fa21fcdceff21a6a30994906df09c04d6e5ea7bd9ec09268458f092c860d9195",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0xe838ec72a63491aee20af25975c79032100a0f9b5b8e52ef9517c333429d3677",
+          "method": "publish",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "43bb8aa094963df6899df02b6d07eb1ff126aeb3fe04dfa4d1ed5bbc5e6df327",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "idle": 2,
+              "agree": 3
+            }
+          }
+        },
+        {
+          "tx": "0xf511064ac0d5a1a6e8718cbc29951b240f49af569bef1ef2599e68dc36ab6ca7",
+          "method": "acknowledge",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x60032dbeB40927fB4D31d001E736Da28748bEed2",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "f2e4789112ebc893d7a259c849f1b8cfb1cd9f9ff7f0efa1e6669bad2c4babdd",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "idle": 2,
+              "agree": 3
+            }
+          }
+        },
+        {
+          "tx": "0xc5dfcb615defa322eb36079ba1984e5664365708ca60e07d8d7147b053bdc271",
+          "method": "file_issue",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x60032dbeB40927fB4D31d001E736Da28748bEed2",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "8b31740d410d21eacfc11cb4a9592d443eb8101d1783d0c23fb29d7c89529da4",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 5
+            }
+          }
+        },
+        {
+          "tx": "0x64dee8b8f34c8b7b35e8c806028d2b8d6f55565319d11bb95f9fe978c8f873b3",
+          "method": "review_issue",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "3f6bdf8a3e47d396671af5dc2d6cda3defc3deb9f6aab0d8993ee6832ddac702",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0x1320dfa1b020a75a2078eb8995cd8aa3ed1308502f8f1eb1e360ae7d01da87dc",
+          "method": "freeze",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "41b1d7c75ab8abcbbb74fa6d4496b84fd876f3130092409cf9b3229173208a0d",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0x6f6cffa723a01ddf63f4974ecd30c593424653681de7947d2afb489b76972693",
+          "method": "stage_edition",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "33d2a0612b1ded9bdb01df6d4ba850eb2b7a01c6949b00f70de8c3581813840d",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 5
+            }
+          }
+        },
+        {
+          "tx": "0xc55b5ad22b1ae7aa0ec71ea14f45d62a516e3e5241774e467654b0ccdb787657",
+          "method": "submit_translation",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x54D713f8Af21B7E0b70930dc1Ea3f5DeD27ddD58",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "297bde5116b7810a00152e31c83195d064169c5563484b3d2eb645e458b4523e",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0x0a7b70e1643c3194ab940b3612c351e7f12b1b92a61201addf584ea76c98464e",
+          "method": "review_translation",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "f0cfb6754291daf8b97ecdf84bb92921a53fae2b6fe9241e7915b066964c92a7",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "idle": 2,
+              "agree": 3
+            }
+          }
+        },
+        {
+          "tx": "0x8586222b8a21c44a3442dd9bbff0f77c47ddaf43a3ac3fea55b891751c0ce74a",
+          "method": "submit_translation",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x54D713f8Af21B7E0b70930dc1Ea3f5DeD27ddD58",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "9454aec103dcafbcfe0dec199ed9128540949de260870c584d6f6317bfb06c89",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 5
+            }
+          }
+        },
+        {
+          "tx": "0x84a6bb5b250d649cf2f608413fd2ad3de9cfa4a22e28b7e31e427078db3219a2",
+          "method": "review_translation",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "1fcd054b75a99782035a7ed86888f845ffdd3b42d09fc46831d968ba5140c276",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "idle": 2,
+              "agree": 3
+            }
+          }
+        },
+        {
+          "tx": "0x9dbd450ec993dd801d7b71b2b2bc4de9d66a3e2c876160ba6b63fac03fc3bafe",
+          "method": "select_translation",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x54D713f8Af21B7E0b70930dc1Ea3f5DeD27ddD58",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "6c67565bbb3013c673c14de708af890b8c9b2691cf406b3810b156228a1eab13",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "idle": 2,
+              "agree": 3
+            }
+          }
+        },
+        {
+          "tx": "0x605cfebe0fd13c1f183368db6b98db750add0a7cebfd815b8c9d075c73ba9244",
+          "method": "approve_locale",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x54D713f8Af21B7E0b70930dc1Ea3f5DeD27ddD58",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "c6a16779722ab7c3574813ec2e6aabf3193537f6bcae375f70dc5a6fdb4ae1b7",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0xcb374fbe3713f12f9a105e45820d90599aca67d8b4ca11a9df11f5ac96728e2d",
+          "method": "publish",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "1ded372259c5fde43ebecdc9db7a1c17a79f0ec549c0a85a929959968ba7a709",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 5
+            }
+          }
+        },
+        {
+          "tx": "0xe8a365c85a0a8a4df085113f63341f0a441b86398b6865b1f278ce2ea726494c",
+          "method": "retire",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "ERROR",
+          "expected_rejection": "handoff incomplete",
+          "args_sha256": "657b9aa12763bb8779194b357908a7433e1feb4d83636f57ecd905309c750ab7",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "idle": 2,
+              "agree": 3
+            }
+          }
+        },
+        {
+          "tx": "0x6902792dc5d928eeceb10d2b00756e3aa261c73109dce418421b12e07a845e5e",
+          "method": "subscribe",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x60032dbeB40927fB4D31d001E736Da28748bEed2",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "7320349a47eeba696a7ca9c7d35571fe7f1ea93b819ba9d4f157f49814d79093",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 5
+            }
+          }
+        },
+        {
+          "tx": "0xa4aad8065f4714bec225dd65c0af6e72252aaa57a3e1ca192bf2c6af4229ad11",
+          "method": "withdraw_handoff",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x60032dbeB40927fB4D31d001E736Da28748bEed2",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "730f0a9d9ee8318bd92677d61e25ebe615163f9dc3118aabfb28f17a499fd27b",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0x4a616d878db57f595861030d94635881c98e1d8af726afe35dae67b0910cca17",
+          "method": "retire",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "657b9aa12763bb8779194b357908a7433e1feb4d83636f57ecd905309c750ab7",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "idle": 2,
+              "agree": 3
+            }
+          }
+        },
+        {
+          "tx": "0x16412e21bf9905bf796df53631f54cbd6144f2c3c310cd70f2dfea0ba81192ae",
+          "method": "subscribe",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x60032dbeB40927fB4D31d001E736Da28748bEed2",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "8e4dc8f4291b98d4f810ed4b61c40761291d10480f4186f8de399da3deb876bb",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "idle": 2,
+              "agree": 3
+            }
+          }
+        },
+        {
+          "tx": "0xe99a0abcd0adab1a497accc422495e257b6b0eb95a2ca36aea9418b9bf7bc812",
+          "method": "acknowledge",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x60032dbeB40927fB4D31d001E736Da28748bEed2",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "a7383201e09eb090048fb8e4e19ca4f66b8790c6bfe9acbc1d200138d1b56d1e",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0x63662ce2797c004786dbbfcc6df8637f8feddcc303fa0786e3c7cbc1823d9e21",
+          "method": "file_issue",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x60032dbeB40927fB4D31d001E736Da28748bEed2",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "83ae7df04f4a73f681218369187f129737c9fec0a71bc68a9e07e36fee7e9e1b",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0x40884e93f49d47b630a64ccac7addb3ceb4e9d5185d4603f4aefbf5f4dfd7b99",
+          "method": "review_issue",
+          "address": "0x80Ca392FB9c81422d5362Be650cd7c3aC2EEF6AF",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "76726dc94937baec2a057ed584ad08d4f0f84d3189d36a5429be7a5fdffa2a4f",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mocked": false,
+      "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+      "transactions": [
+        {
+          "tx": "0xa888514e12a6bbf8a1e4fbc8ca178bfbc49ae3d6e96c962a9abb2ef6907bef99",
+          "method": "create_publication",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "d6904cab71c2bc68a0b7f9a36949069acaee9d1dfd406a7ae2c9af08d8b6ab53",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 5
+            }
+          }
+        },
+        {
+          "tx": "0x6c19c8e9a8b987faeca71d76d63a12c517276c5ccfa466fa04a309efde4dc0b7",
+          "method": "set_editor",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "959347ebb574f24f5cfb17d8ddbbf03eba4a3f3f81f0361c43d0e8eaed5007e2",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0x7f478b15904ccfac44acbc2bbee2701a793cb06afded996231189a87e73d49e7",
+          "method": "set_editor",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "7b67276b22b307cb9508844c18986265e934c25a1ef9cc8a0b12b471a6abfcf8",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 5
+            }
+          }
+        },
+        {
+          "tx": "0x34e7c26b56c0b1d84f5ccb19afc87049a3aba6b057571d90f364da48fd9a46bf",
+          "method": "subscribe",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x60032dbeB40927fB4D31d001E736Da28748bEed2",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "8e4dc8f4291b98d4f810ed4b61c40761291d10480f4186f8de399da3deb876bb",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "idle": 2,
+              "agree": 3
+            }
+          }
+        },
+        {
+          "tx": "0x20e019f840b4d72b68165c9927ca495b11f73aa6f9f16f787745498b122d7477",
+          "method": "stage_edition",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "1927f757273add9df7be96b105770b8695cdd6566a6c9351cf1f247bb6b96012",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 5
+            }
+          }
+        },
+        {
+          "tx": "0xde05842e4bd6df4510aa83007fedaf9d2861cbe83a5474512bceb10012cb2b02",
+          "method": "submit_translation",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x54D713f8Af21B7E0b70930dc1Ea3f5DeD27ddD58",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "64d21b094c69e4b1f0b51cd671382b460114e76418384ec61211a73a690f51cc",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0x43b3f8452d3646b36816bd6ebc88045ef3c74245e0d803231004ed74cbd81c31",
+          "method": "review_translation",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "a9097e34303d8746451a5bba60092eff0fef744dbb5e7d6f4c3e5ce85e8c414c",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "disagree": 1,
+              "agree": 3,
+              "idle": 1
+            }
+          }
+        },
+        {
+          "tx": "0x09832150096f27b1140eebae5a6fd7ba5097d43ac9a303722b1e2f5294eafb27",
+          "method": "publish",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "ERROR",
+          "expected_rejection": "edition not ready",
+          "args_sha256": "7ab1b824fb646198c0e4b421b19c2a6efd18ec358d4d53ba129c64e89ffb3519",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0x593208cc85522d3304ba4f606ce5d443f99037f696d7b08d01b1d77df98ba8ff",
+          "method": "submit_translation",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x54D713f8Af21B7E0b70930dc1Ea3f5DeD27ddD58",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "2c86b5e678564ce65e5a55ea43283597c03f8cb4b16c0f90090f3c3be07e6c99",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0x3b9d31a145e450e675c9db096d68d6720726cb3427034f7a7746735445d57a8b",
+          "method": "review_translation",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "f0cfb6754291daf8b97ecdf84bb92921a53fae2b6fe9241e7915b066964c92a7",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0x3be815852d48e5dc64e74f9bde899cf2a1704ccfe6ff21b3bbab94af33161f07",
+          "method": "submit_translation",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x54D713f8Af21B7E0b70930dc1Ea3f5DeD27ddD58",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "09a50cebf00b737d0d05b805483eac427ca6ad351c5432c4c675c9f9ae23bc1e",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 5
+            }
+          }
+        },
+        {
+          "tx": "0xe198ec49ca3f4cfb2bd5340a29033ae104f937541496318725fbd87b5a89fff8",
+          "method": "review_translation",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "1fcd054b75a99782035a7ed86888f845ffdd3b42d09fc46831d968ba5140c276",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0xae963ccf0185f1237f1b96378d4acd90a5dc606e5d89838ebe5cc785a58287b8",
+          "method": "approve_locale",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x54D713f8Af21B7E0b70930dc1Ea3f5DeD27ddD58",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "a8cabfa6313a418e7fe36123e9fde8795545febfb11c36c3a126b0aebd1fa4de",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0x6a1e94807bb1cc1857c1b8dc42cca4874238ce4b5bd837c6102deebe7fbd225c",
+          "method": "approve_locale",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x54D713f8Af21B7E0b70930dc1Ea3f5DeD27ddD58",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "fb94fa58470e8ba8353ffc25c964e883e33558a27428c9bd8ddf247d2ef121cd",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0xe4a9b713bd2dac8fb09f60eb2742a0fc0a57d94f86da4a40d99d99b96754edae",
+          "method": "publish",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "7ab1b824fb646198c0e4b421b19c2a6efd18ec358d4d53ba129c64e89ffb3519",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0xc6b90d324104e5fb1eec771e6e5de31d61e70368e742ca4d6f86682fe3707701",
+          "method": "acknowledge",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x60032dbeB40927fB4D31d001E736Da28748bEed2",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "76d2fceb49508a8bfd99863d2cdcc1f9ce1237852b17ed1664e79980cab592c4",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "idle": 2,
+              "agree": 3
+            }
+          }
+        },
+        {
+          "tx": "0x8264787aa53be675f23d8ff4ac0193b1ff1dc5980099101ac775479610a30bd7",
+          "method": "file_issue",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x60032dbeB40927fB4D31d001E736Da28748bEed2",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "c9814a75812dd7756d3754167d6dd914df1056f9f18fc5ce7608eb7abd0b483d",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        },
+        {
+          "tx": "0xa9a5b16a92583f9c1cba712b36e41ce1170dba2bce88ccc5ac0eeb04d96c3208",
+          "method": "review_issue",
+          "address": "0x17a056cC6f3Eec6e6914f1dB02e02852B1Ca4322",
+          "sender": "0x95803126315A05E642D8E46CE1d77eA2199a2A6E",
+          "value_atto": "0",
+          "status": "finalized",
+          "execution": "SUCCESS",
+          "expected_rejection": null,
+          "args_sha256": "3f6bdf8a3e47d396671af5dc2d6cda3defc3deb9f6aab0d8993ee6832ddac702",
+          "consensus_summary": {
+            "validators_count": 4,
+            "leader_receipts_count": 2,
+            "vote_counts": {
+              "agree": 3,
+              "idle": 2
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

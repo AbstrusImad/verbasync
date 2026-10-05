@@ -1,0 +1,364 @@
+{
+  "ctor": {
+    "params": [
+      [
+        "title",
+        "string"
+      ]
+    ],
+    "kwparams": {}
+  },
+  "methods": {
+    "acknowledge": {
+      "params": [
+        [
+          "edition",
+          "int"
+        ],
+        [
+          "fingerprint",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "approve_locale": {
+      "params": [
+        [
+          "edition",
+          "int"
+        ],
+        [
+          "locale",
+          "string"
+        ],
+        [
+          "fingerprint",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "cancel_edition": {
+      "params": [
+        [
+          "edition",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "create_publication": {
+      "params": [
+        [
+          "name",
+          "string"
+        ],
+        [
+          "source_locale",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "int",
+      "payable": false
+    },
+    "file_issue": {
+      "params": [
+        [
+          "edition",
+          "int"
+        ],
+        [
+          "locale",
+          "string"
+        ],
+        [
+          "segment",
+          "int"
+        ],
+        [
+          "claim",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "int",
+      "payable": false
+    },
+    "freeze": {
+      "params": [
+        [
+          "edition",
+          "int"
+        ],
+        [
+          "reason",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "get_edition": {
+      "params": [
+        [
+          "edition",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "get_issue": {
+      "params": [
+        [
+          "issue",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "get_live_manifest": {
+      "params": [
+        [
+          "publication",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "get_protocol": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "get_publication": {
+      "params": [
+        [
+          "publication",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "get_translation": {
+      "params": [
+        [
+          "translation",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "preview_handoff": {
+      "params": [
+        [
+          "edition",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "preview_publication": {
+      "params": [
+        [
+          "edition",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "publish": {
+      "params": [
+        [
+          "edition",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "retire": {
+      "params": [
+        [
+          "edition",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "review_issue": {
+      "params": [
+        [
+          "issue",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "review_translation": {
+      "params": [
+        [
+          "translation",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "select_translation": {
+      "params": [
+        [
+          "translation",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "set_editor": {
+      "params": [
+        [
+          "publication",
+          "int"
+        ],
+        [
+          "locale",
+          "string"
+        ],
+        [
+          "editor",
+          "string"
+        ],
+        [
+          "active",
+          "bool"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "stage_edition": {
+      "params": [
+        [
+          "publication",
+          "int"
+        ],
+        [
+          "label",
+          "string"
+        ],
+        [
+          "segments",
+          [
+            {
+              "$rep": "string"
+            }
+          ]
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "int",
+      "payable": false
+    },
+    "submit_translation": {
+      "params": [
+        [
+          "edition",
+          "int"
+        ],
+        [
+          "locale",
+          "string"
+        ],
+        [
+          "segment",
+          "int"
+        ],
+        [
+          "text",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "int",
+      "payable": false
+    },
+    "subscribe": {
+      "params": [
+        [
+          "publication",
+          "int"
+        ],
+        [
+          "locale",
+          "string"
+        ],
+        [
+          "active",
+          "bool"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "withdraw_handoff": {
+      "params": [
+        [
+          "edition",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    }
+  }
+}
